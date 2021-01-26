@@ -2,6 +2,11 @@
 
 list_1 = [1, 2, 3, 4, 2]
 list_2 = [2, 4, 6, 8, 2]
+temp_lst = []
 
-new_lst = [item for item in set(list_1) if item in set(list_2)]
+for item in list_1:             # remove duplicates from List_1
+    if item not in temp_lst:
+        temp_lst.append(item)
+
+new_lst = [item for item in temp_lst if item in list_2]
 print(new_lst)
