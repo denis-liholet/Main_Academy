@@ -16,7 +16,7 @@ result_lst = []
 temp_lst = [symbol for symbol in input_string if symbol.isdigit()]
 
 # заполнение итогового списка только теми цифрами,
-# которые повторяются более 1 раза, испльзуя метод count()
+# которые повторяются более 1 раза, используя метод count()
 for i in temp_lst:
     count = temp_lst.count(i)
     if count > 1:
